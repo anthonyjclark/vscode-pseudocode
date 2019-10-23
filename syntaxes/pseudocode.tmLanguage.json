@@ -1,0 +1,96 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "pseudocode",
+	"scopeName": "source.pseudocode",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#operators"
+		},
+		{
+			"include": "#brackets"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#function"
+		},
+		{
+			"include": "#comments"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "entity.name.function.pseudocode",
+					"match": "\\b(IF|ELSE|WHILE|FOR|LOOP|BREAK|NOT|IN|RETURN)\\b"
+				}
+			]
+		},
+		"operators": {
+			"patterns": [
+				{
+					"name": "keyword.control.pseudocode",
+					"match": "([+/%^*.><≥≤=&|!-]|\\[|\\])"
+				}
+			]
+		},
+		"brackets": {
+			"patterns": [
+				{
+					"name": "keyword.operator.pseudocode",
+					"match": "(\\(|\\)|{|})"
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric.pseudocode",
+					"match": "[0-9]+|\\b(NONE|INFINITY|FALSE|TRUE)\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.pseudocode",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.pseudocode",
+					"match": "\\\\."
+				}
+			]
+		},
+		"function": {
+			"patterns": [
+				{
+					"match": "\\b(FUNCTION)\\s([[:alpha:]]+)\\(",
+					"captures": {
+						"1": {
+							"name": "entity.name.function.pseudocode"
+						},
+						"2": {
+							"name": "storage.type.pseudocode"
+						}
+					}
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.pseudocode",
+					"match": "#.*\n"
+				}
+			]
+		}
+	}
+}

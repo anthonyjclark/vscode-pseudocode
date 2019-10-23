@@ -1,0 +1,81 @@
+# Comments
+
+# Declaring Variables and Constants
+x = 5
+
+# Input and Output (probably unnecessary)
+
+# Types
+floats, ints, "strings", bools, 'characters', booleans
+
+# Built-ins
+.length
+.size
+
+# Arithmetic
++
+-
+*
+/
+%
+^
+
+# Relational
+>
+<
+≥
+≤
+==
+!=
+
+# Logical
+&&
+||
+!
+
+# Other
+=
+.
+..<
+..=
+[]
+
+# Brackets
+()
+{} # set
+
+# Conditional statements
+IF condition
+	block
+
+IF condition
+	block
+ELSE
+	block
+
+# Loop statements
+WHILE condition
+	block
+
+FOR var IN sequence
+	block
+
+# Functions
+FUNCTION FunctionName(p1, p2, ...)
+	block
+	RETURN
+
+
+
+
+
+
+FUNCTION InsertionSort(array)
+	FOR j = 1 IN [0 ..< array.length]
+		key = array[j]
+		i = j - 1
+		WHILE i >= 0 && array[i] > key
+			array[i + 1] = array[i]
+			i = i - 1
+			array[i + 1] = key
+	RETURN array
