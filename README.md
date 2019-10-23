@@ -1,59 +1,34 @@
 
-# Resources
+# vscode-pseudocode
 
-- https://en.wikiversity.org/wiki/Pseudocode/Gaddis_Pseudocode
-- https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide
+A simple psuedocode based for creating lecture slides.
+
+![Insertion Sort Pseudocode](images/insertion-sort.png)
+
+## Usage
 
 ```bash
-ln -s ~/path/to/this/ ~/.vscode/extensions/this
+# Loading the plugin without installing as an extension
+ln -s ~/path/to/this/vscode-pseudocode ~/.vscode/extensions/vscode-pseudocode
 ```
 
-# vscode-pseudocode README
+I picked selectors based on colors for the "Quiet Light" theme.
 
-This is the README for your extension "vscode-pseudocode". After writing up a brief description, we recommend including the following sections.
+I use the following Visual Studio Code language specific settings, which help me copy and paste into PowerPoint.
 
-I picked selectors based on colors for the "Quiet Light" theme
+```json
+"[pseudocode]": {
+  "editor.fontFamily": "Consolas, 'Courier New', monospace",
+  "editor.insertSpaces": false,
+  "editor.tabSize": 3,
+  "editor.rulers": [
+    54
+  ]
+},
+```
 
-## Features
+## Resources
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- [Gaddis Pseudocode Wiki](https://en.wikiversity.org/wiki/Pseudocode/Gaddis_Pseudocode)
+- [Visual Studio Code Syntax Guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide)
 
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-Features to work on:
-- "indentationRules"
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
