@@ -30,7 +30,7 @@
 			"patterns": [
 				{
 					"name": "entity.name.function.pseudocode",
-					"match": "\\b(IF|ELSE|WHILE|FOR|LOOP|BREAK|NOT|IN|RETURN)\\b"
+					"match": "\\b(IF|ELSE|WHILE|FOR|LOOP|BREAK|NOT|IN|RETURN|TRY|MATCH)\\b"
 				}
 			]
 		},
